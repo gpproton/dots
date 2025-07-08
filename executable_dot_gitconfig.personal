@@ -1,0 +1,9 @@
+[user]
+    email = me@godwin.dev
+    name = "Godwin peter. O"
+
+[github]
+user = "gpproton"
+
+[core]
+sshCommand = "ssh -i ~/.ssh/git-gpproton"
