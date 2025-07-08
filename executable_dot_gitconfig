@@ -1,0 +1,89 @@
+[user]
+  name = "Godwin peter .O"
+  email = me@godwin.dev
+
+[init]
+  defaultBranch = main
+
+[core]
+  autocrlf = input
+  eol = lf
+  editor = nvim
+
+[push]
+  autoSetupRemote = true
+
+[pull]
+  rebase = true
+
+[interactive]
+  diffFilter = delta --color-only
+
+[merge]
+  nflictstyle = diff3
+
+[diff]
+  colorMoved = default
+
+[color]  
+  diff = auto  
+  status = auto  
+  branch = auto
+
+[branch]  
+  autosetuprebase = always
+
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
+
+[filter "lfs"]
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+
+[includeIf "gitdir:~/rora-fly/**"]
+  path = ~/.gitconfig.rora
+
+[includeIf "gitdir:~/personal/**"]
+  path = ~/.gitconfig.personal
+
+[includeIf "gitdir:~/drolx/**"]
+  path = ~/.gitconfig.personal
+
+[includeIf "gitdir:~/customers/**"]
+  path = ~/.gitconfig.personal
+
+[includeIf "gitdir:~/profound/**"]
+  path = ~/.gitconfig.personal
+
+[safe]
+	directory = *
+
+[alias]
+  aa = add --all
+  bv = branch -vv
+  ba = branch -ra
+  bd = branch -d
+  ca = commit --amend
+  cb = checkout -b
+  cm = commit -a --amend -C HEAD
+  ci = commit -a -v
+  co = checkout
+  di = diff
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  ld = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
+  ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  mm = merge --no-ff
+  st = status --short --branch
+  tg = tag -a 
+  pu = push --tags
+  un = reset --hard HEAD  
+  uh = reset --hard HEAD^
+
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
