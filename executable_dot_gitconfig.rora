@@ -1,0 +1,9 @@
+[user]
+    email = dev@drolx.com
+    name = "Aurora Butterfly"
+
+[github]
+user = "rora-fly"
+
+[core]
+sshCommand = "ssh -i ~/.ssh/git-rora"
