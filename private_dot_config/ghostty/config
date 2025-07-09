@@ -10,7 +10,7 @@ window-save-state = always
 window-step-resize = false
 background-blur-radius = 15
 confirm-close-surface = false
-minimum-contrast = 10
+minimum-contrast = 1
 
 # Initial command to run
 # command = /bin/zsh -l -c "tmux a || tmux"
