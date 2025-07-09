@@ -9,7 +9,7 @@ window-padding-balance = true
 window-save-state = always
 window-step-resize = false
 background-blur-radius = 15
-adjust-cell-height = 25%
+# adjust-cell-height = 25%
 confirm-close-surface = false
 
 # Initial command to run
