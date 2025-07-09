@@ -30,7 +30,8 @@ adjust-underline-position = 4
 # Color scheme (Dracula-inspired dark theme)
 theme = catppuccin-macchiato
 background-opacity = 0.9
-background = #24273a
+# background = #24273a
+background = #000000
 foreground = #cad3f5
 selection-background = #5b6078
 selection-foreground = #cad3f5
