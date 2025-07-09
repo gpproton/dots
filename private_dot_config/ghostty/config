@@ -32,13 +32,13 @@ gtk-titlebar = false
 gtk-wide-tabs = false
 
 # Font and cursor settings
-# font-family = "Fira Code"
-# font-style = SemiBold
-# font-family-bold = "Fira Code"
-# font-size = 9
-# font-thicken = true
-# cursor-style = block
-# adjust-underline-position = 4
+font-family = "Fira Code"
+font-style = SemiBold
+font-family-bold = "Fira Code"
+font-size = 9
+font-thicken = true
+cursor-style = block
+adjust-underline-position = 4
 
 # Background and transparency settings
 # Color scheme (Dracula-inspired dark theme)
@@ -46,11 +46,11 @@ gtk-wide-tabs = false
 background-opacity = 0.75
 background = #24273a
 # background = #000000
-# foreground = #cad3f5
-# selection-background = #5b6078
-# selection-foreground = #cad3f5
-# cursor-color = #f4dbd6
-# cursor-text = #cad3f5
+foreground = #cad3f5
+selection-background = #5b6078
+selection-foreground = #cad3f5
+cursor-color = #f4dbd6
+cursor-text = #cad3f5
 # palette = 0=#494d64
 # palette = 1=#ed8796
 # palette = 2=#a6da95
