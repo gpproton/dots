@@ -5,6 +5,25 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="arrow"
 
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+source_if_exists () {
+    if test -r "$1"; then
+        source "$1"
+    fi
+}
+
+export EDITOR='nvim'
+export TERM=screen-256color
+export XDG_CONFIG_HOME=$HOME/.config
+export GITUSER="gpproton"
+export WORKSPACE=$HOME/personal
+export COMPANY_SPACE=$HOME/drolx
+export CUSTOMER_SPACE=$HOME/customers
+export DOTFILES=$HOME/dots
+export VAULT="$WORKSPACE/note-taking"
+export SCRIPTS="$WORKSPACE/scripts"
+
 plugins=(
     git
     archlinux
@@ -12,7 +31,7 @@ plugins=(
     zsh-syntax-highlighting
 )
 
-source "$ZSH"/oh-my-zsh.sh
+source_if_exists "$ZSH"/oh-my-zsh.sh
 
 # Set-up icons for files/folders in terminal
 alias ls='eza -a --icons'
@@ -29,7 +48,7 @@ setopt appendhistory
 
 export TERMCMD="kitty --title 'terminal filechooser'"
 
-. $HOME/.sharedrc
+source_if_exists $HOME/.sharedrc
 
 # bun completions
 [ -s "/home/leanny/.bun/_bun" ] && source "/home/leanny/.bun/_bun"
