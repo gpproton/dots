@@ -30,6 +30,7 @@ shell-integration-features = true
 macos-titlebar-style = transparent
 gtk-titlebar = false
 gtk-wide-tabs = false
+gtk-gsk-renderer = default
 
 # Font and cursor settings
 font-family = "Fira Code"
