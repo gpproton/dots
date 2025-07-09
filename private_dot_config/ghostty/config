@@ -17,6 +17,8 @@ mouse-hide-while-typing = true
 copy-on-select = true
 confirm-close-surface = false
 
+minimum-contrast = 1
+
 # Font and cursor settings
 font-family = "Fira Code"
 font-style = SemiBold
