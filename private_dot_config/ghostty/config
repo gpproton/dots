@@ -1,17 +1,17 @@
 # Window settings
-# window-decoration = false
-# window-inherit-working-directory = true
-# window-theme = dark
-# window-padding-balance = true
-# initial-window = true
-# resize-overlay = never
-# window-padding-balance = true
-# window-save-state = always
-# window-step-resize = false
-# background-blur-radius = 15
-# confirm-close-surface = false
-# minimum-contrast = 1
-#
+window-decoration = false
+window-inherit-working-directory = true
+window-theme = dark
+window-padding-balance = true
+initial-window = true
+resize-overlay = never
+window-padding-balance = true
+window-save-state = always
+window-step-resize = false
+background-blur-radius = 15
+confirm-close-surface = false
+minimum-contrast = 1
+
 # # Initial command to run
 # # command = /bin/zsh -l -c "tmux a || tmux"
 #
