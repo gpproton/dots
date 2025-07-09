@@ -10,7 +10,7 @@ gtk-wide-tabs = false
 macos-titlebar-style = hidden
 
 # Initial command to run
-command = /bin/zsh -l -c "tmux a || tmux"
+# command = /bin/zsh -l -c "tmux a || tmux"
 
 # Mouse settings
 mouse-hide-while-typing = true
