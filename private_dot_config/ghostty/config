@@ -2,12 +2,15 @@
 window-decoration = false
 window-inherit-working-directory = true
 window-theme = dark
-window-save-state = always
 window-padding-balance = true
-mouse-hide-while-typing = true
-gtk-titlebar = false
-gtk-wide-tabs = false
-macos-titlebar-style = hidden
+initial-window = true
+resize-overlay = never
+window-padding-balance = true
+window-save-state = always
+window-step-resize = false
+background-blur-radius = 15
+adjust-cell-height = 25%
+confirm-close-surface = false
 
 # Initial command to run
 # command = /bin/zsh -l -c "tmux a || tmux"
@@ -15,7 +18,18 @@ macos-titlebar-style = hidden
 # Mouse settings
 mouse-hide-while-typing = true
 copy-on-select = true
-confirm-close-surface = false
+clipboard-trim-trailing-spaces = true
+
+# behavior
+auto-update = check
+auto-update-channel = stable
+quit-after-last-window-closed = true
+shell-integration-features = true
+
+# OS-specific settings
+macos-titlebar-style = transparent
+gtk-titlebar = false
+gtk-wide-tabs = false
 
 # Font and cursor settings
 font-family = "Fira Code"
@@ -29,7 +43,7 @@ adjust-underline-position = 4
 # Background and transparency settings
 # Color scheme (Dracula-inspired dark theme)
 theme = catppuccin-macchiato
-background-opacity = 0.9
+background-opacity = 0.85
 # background = #24273a
 background = #000000
 foreground = #cad3f5
