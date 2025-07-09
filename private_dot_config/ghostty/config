@@ -41,10 +41,8 @@ font-thicken = true
 cursor-style = block
 adjust-underline-position = 4
 
-# Background and transparency settings
-# Color scheme (Dracula-inspired dark theme)
-# theme = catppuccin-macchiato
-theme = "GitHub Dark"
+# Color and transparency settings
+# theme = "GitHub Dark"
 background-opacity = 0.75
 background = #24273a
 # background = #000000
