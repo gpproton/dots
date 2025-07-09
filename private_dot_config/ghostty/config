@@ -13,7 +13,7 @@ confirm-close-surface = false
 minimum-contrast = 1
 
 # Initial command to run
-# command = /bin/zsh -l -c "tmux a || tmux"
+command = /bin/zsh -l -c "tmux a || tmux"
 
 # Mouse settings
 mouse-hide-while-typing = true
@@ -43,4 +43,4 @@ adjust-underline-position = 4
 
 # Color and transparency settings
 theme = "GitHub Dark"
-background-opacity = 0.75
+background-opacity = 0.7
