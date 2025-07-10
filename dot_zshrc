@@ -29,7 +29,12 @@ export SCRIPTS="$WORKSPACE/scripts"
 
 plugins=(
     git
+    gh
     ssh
+    ansible
+    bun
+    brew
+    chezmoi
     tmux
     archlinux
     aliases
@@ -40,6 +45,16 @@ plugins=(
     docker
     docker-compose
     dotenv
+    macos
+    node
+    nvm
+    python
+    rsync
+    spring
+    zsh-interactive-cd
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    zsh-autocomplete
 )
 
 source $ZSH/oh-my-zsh.sh
