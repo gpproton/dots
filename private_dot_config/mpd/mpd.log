@@ -32966,3 +32966,5 @@ Note: Hit end of (available) data during resync.
 2025-07-06T21:51:13 player: played "Lorde/Melodrama/11 Lorde - Perfect Places.mp3"
 2025-07-06T21:55:17 player: played "Mandisa/Out Of The Dark/09 Mandisa - Bleed The Same.mp3"
 2025-07-06T22:01:07 player: played "Madonna/Bits n' Bobs/15 Madonna - La Isla Bonita (TV Broadcast Japan 1987).mp3"
+2025-07-09T19:20:26 zeroconf: No global port, disabling zeroconf
+2025-07-09T19:20:27 config: option "device" on line 38 was not recognized
