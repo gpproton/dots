@@ -15,8 +15,11 @@ source_if_exists () {
 
 export EDITOR='nvim'
 export TERM=screen-256color
+export TERMCMD="ghostty --title=\"File Picker\""
 export XDG_CONFIG_HOME=$HOME/.config
 export GITUSER="gpproton"
+
+# Other environment variables
 export WORKSPACE=$HOME/personal
 export COMPANY_SPACE=$HOME/drolx
 export CUSTOMER_SPACE=$HOME/customers
@@ -45,8 +48,6 @@ HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 setopt appendhistory
-
-export TERMCMD="kitty --title 'terminal filechooser'"
 
 source_if_exists $HOME/.sharedrc
 
