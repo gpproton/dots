@@ -42,17 +42,13 @@ alias lt='eza -a --tree --level=1 --icons'
 source <(fzf --zsh)
 
 HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=100000
+SAVEHIST=100000
 setopt appendhistory
 
 export TERMCMD="kitty --title 'terminal filechooser'"
 
 source_if_exists $HOME/.sharedrc
-
-# bun completions
-[ -s "/home/leanny/.bun/_bun" ] && source "/home/leanny/.bun/_bun"
-
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
