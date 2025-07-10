@@ -36,13 +36,13 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 alias yt-music='yt-dlp --yes-playlist --sponsorblock-remove all -x -f bestaudio --audio-format m4a'
 
 # bun completions
-[ -s "/home/leanny/.bun/_bun" ] && source "/home/leanny/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # pnpm
-export PNPM_HOME="/home/leanny/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
