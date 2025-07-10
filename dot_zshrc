@@ -44,7 +44,6 @@ plugins=(
     common-aliases
     docker
     docker-compose
-    dotenv
     macos
     node
     nvm
