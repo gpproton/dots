@@ -32968,3 +32968,6 @@ Note: Hit end of (available) data during resync.
 2025-07-06T22:01:07 player: played "Madonna/Bits n' Bobs/15 Madonna - La Isla Bonita (TV Broadcast Japan 1987).mp3"
 2025-07-09T19:20:26 zeroconf: No global port, disabling zeroconf
 2025-07-09T19:20:27 config: option "device" on line 38 was not recognized
+2025-07-10T01:06:12 player: played "Phil Collins/True Colors/02 Phil Collins - Don't Lose My Number.mp3"
+2025-07-10T01:07:03 zeroconf: No global port, disabling zeroconf
+2025-07-10T01:07:04 config: option "device" on line 38 was not recognized
