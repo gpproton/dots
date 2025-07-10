@@ -33,13 +33,24 @@ export PATH=$PATH:$ANDROID_HOME:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+alias yt-music='yt-dlp --yes-playlist --sponsorblock-remove all -x -f bestaudio --audio-format m4a'
+
+# bun completions
+[ -s "/home/leanny/.bun/_bun" ] && source "/home/leanny/.bun/_bun"
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/leanny/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-. "$HOME/.cargo/env"
 
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
@@ -56,24 +67,9 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-# pnpm
-export PNPM_HOME="/home/leanny/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-. "/home/leanny/.deno/env"
-# Initialize zsh completions (added by deno install script)
-autoload -Uz compinit
 
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-# bun completions
-[ -s "/home/leanny/.bun/_bun" ] && source "/home/leanny/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-alias yt-music='yt-dlp --yes-playlist --sponsorblock-remove all -x -f bestaudio --audio-format m4a'
 
