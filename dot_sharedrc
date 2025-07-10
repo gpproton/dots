@@ -1,7 +1,7 @@
 export PATH=$HOME/.local/bin:$PATH
 
 ## start shell-assist
-ALIAS_PATH="$HOME/shell-assist/alias"
+ALIAS_PATH="$HOME/.alias"
 if [ -d $ALIAS_PATH ]; then
 for rc in $ALIAS_PATH/*.sh; do
     if [ -f $rc ]; then
