@@ -29,13 +29,10 @@ export SCRIPTS="$WORKSPACE/scripts"
 
 plugins=(
     git
-    archlinux
-    zsh-autosuggestions
-    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
-source_if_exists "$ZSH"/oh-my-zsh.sh
+# source_if_exists "$ZSH"/oh-my-zsh.sh
 
 
 # Set-up icons for files/folders in terminal
