@@ -29,6 +29,17 @@ export SCRIPTS="$WORKSPACE/scripts"
 
 plugins=(
     git
+    ssh
+    tmux
+    archlinux
+    aliases
+    alias-finder
+    colorize
+    command-not-found
+    common-aliases
+    docker
+    docker-compose
+    dotenv
 )
 
 source $ZSH/oh-my-zsh.sh
