@@ -17,6 +17,7 @@ export EDITOR='nvim'
 export TERM=screen-256color
 export TERMCMD="ghostty --title=\"File Picker\""
 export XDG_CONFIG_HOME=$HOME/.config
+export SSH_AUTH_SOCK=$HOME/.bitwarden-ssh-agent.sock
 export GITUSER="gpproton"
 
 # Other environment variables
@@ -72,3 +73,7 @@ SAVEHIST=100000
 setopt appendhistory
 
 source_if_exists $HOME/.sharedrc
+source_if_exists $HOME/.zprofile
+
+# bun completions
+[ -s "/home/leanny/.bun/_bun" ] && source "/home/leanny/.bun/_bun"
