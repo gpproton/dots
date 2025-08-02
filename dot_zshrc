@@ -14,7 +14,6 @@ source_if_exists() {
 }
 
 export EDITOR='nvim'
-export BROWSER='microsoft-edge-stable'
 export TERM=screen-256color
 export TERMCMD="ghostty --title=\"File Picker\""
 export XDG_CONFIG_HOME=$HOME/.config
