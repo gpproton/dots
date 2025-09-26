@@ -28,7 +28,8 @@ export PATH="$PATH:/home/leanny/.local/share/JetBrains/Toolbox/scripts"
 ## Jetbrains end
 
 export ANDROID_HOME="$HOME/Android/Sdk"
-export NDK_HOME="$ANDROID_HOME/ndk/28.0.12433566"
+export NDK_HOME="$(ls -d $ANDROID_HOME/ndk/* | head -n 1)"
+export CAPACITOR_ANDROID_STUDIO_PATH=/usr/bin/android-studio
 export PATH=$PATH:$ANDROID_HOME:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
