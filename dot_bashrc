@@ -14,3 +14,5 @@ export TERMCMD="kitty --title 'terminal filechooser'"
 . $HOME/.sharedrc
 . "$HOME/.cargo/env"
 . "/home/leanny/.deno/env"
+. "/home/lea/.deno/env"
+source /home/lea/.local/share/bash-completion/completions/deno.bash

@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/lea/.zsh/completions:"* ]]; then export FPATH="/home/lea/.zsh/completions:$FPATH"; fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -15,15 +17,14 @@ source_if_exists() {
 
 export EDITOR='nvim'
 export TERM=screen-256color
-export TERMCMD="ghostty --title=\"File Picker\""
 export XDG_CONFIG_HOME=$HOME/.config
 export SSH_AUTH_SOCK=$HOME/.bitwarden-ssh-agent.sock
 export GITUSER="gpproton"
 
 # Other environment variables
-export WORKSPACE=$HOME/personal
-export COMPANY_SPACE=$HOME/drolx
-export CUSTOMER_SPACE=$HOME/customers
+export WORKSPACE=$HOME/spaces
+export COMPANY_SPACE=$WORKSPACE/drolx
+export CUSTOMER_SPACE=$WORKSPACE/customers
 export DOTFILES=$HOME/dots
 export VAULT="$WORKSPACE/note-taking"
 export SCRIPTS="$WORKSPACE/scripts"
@@ -76,5 +77,8 @@ source_if_exists $HOME/.sharedrc
 source_if_exists $HOME/.zprofile
 
 # bun completions
-[ -s "/home/leanny/.bun/_bun" ] && source "/home/leanny/.bun/_bun"
-. "/home/leanny/.deno/env"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+. "$HOME/.deno/env"
+# Initialize zsh completions (added by deno install script)
+autoload -Uz compinit
+compinit
