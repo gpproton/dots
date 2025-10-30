@@ -16,3 +16,6 @@ export TERMCMD="kitty --title 'terminal filechooser'"
 . "/home/leanny/.deno/env"
 . "/home/lea/.deno/env"
 source /home/lea/.local/share/bash-completion/completions/deno.bash
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/lea/.sdkman"
+[[ -s "/home/lea/.sdkman/bin/sdkman-init.sh" ]] && source "/home/lea/.sdkman/bin/sdkman-init.sh"

@@ -82,3 +82,7 @@ source_if_exists $HOME/.zprofile
 # Initialize zsh completions (added by deno install script)
 autoload -Uz compinit
 compinit
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/lea/.sdkman"
+[[ -s "/home/lea/.sdkman/bin/sdkman-init.sh" ]] && source "/home/lea/.sdkman/bin/sdkman-init.sh"
