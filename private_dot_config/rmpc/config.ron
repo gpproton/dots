@@ -2,7 +2,7 @@
 #![enable(unwrap_newtypes)]
 #![enable(unwrap_variant_newtypes)]
 (
-    address: "/run/user/1000/mpd/socket",
+    address: "~/.mpd/socket",
     // address: "/home/leanny/.mpd/socket",
     cache_dir: Some("/tmp/rmpc/cache"),
     lyrics_dir: Some("~/Music"),
