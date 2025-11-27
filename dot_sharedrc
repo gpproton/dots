@@ -15,8 +15,8 @@ fi
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$PATH:$DOTNET_ROOT
 export PATH=$PATH:$DOTNET_ROOT/tools
-export ASPNETCORE_Kestrel__Certificates__Default__Password=""
-export ASPNETCORE_Kestrel__Certificates__Default__Path="$HOME/certs/drolx.pfx"
+# export ASPNETCORE_Kestrel__Certificates__Default__Password=""
+# export ASPNETCORE_Kestrel__Certificates__Default__Path="$HOME/certs/drolx.pfx"
 source "$HOME/.dotnetrc"
 ## end dotnet
 

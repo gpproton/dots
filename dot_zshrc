@@ -26,7 +26,7 @@ export WORKSPACE=$HOME/spaces
 export COMPANY_SPACE=$WORKSPACE/drolx
 export CUSTOMER_SPACE=$WORKSPACE/customers
 export DOTFILES=$HOME/dots
-export VAULT="$WORKSPACE/note-taking"
+export VAULT="$WORKSPACE/obsidian"
 export SCRIPTS="$WORKSPACE/scripts"
 
 plugins=(
