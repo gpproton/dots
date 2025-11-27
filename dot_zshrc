@@ -23,7 +23,7 @@ export GITUSER="gpproton"
 
 # Other environment variables
 export WORKSPACE=$HOME/spaces
-export CERTS=$HOME/certs
+export CERTS=$HOME/.certs
 export COMPANY_SPACE=$WORKSPACE/drolx
 export CUSTOMER_SPACE=$WORKSPACE/customers
 export DOTFILES=$HOME/dots
