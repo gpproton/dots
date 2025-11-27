@@ -24,7 +24,7 @@ export GITUSER="gpproton"
 # Other environment variables
 export WORKSPACE=$HOME/spaces
 export CERTS=$HOME/.certs
-export ORG_SPACE=$WORKSPACE/drolx
+export ORG=$WORKSPACE/drolx
 export CUSTOMERS=$WORKSPACE/customers
 export DOTFILES=$HOME/dots
 export VAULT="$WORKSPACE/obsidian"
