@@ -74,11 +74,12 @@ alias ports='netstat -tulanp'
 
 alias wget='wget -c'
 
-export DEV_BOX="$HOME/personal"
-export SANDBOX="$HOME/sandbox"
+export WORKSPACE="$HOME/spaces"
+export DEV_BOX="$WORKSPACE/personal"
+export SANDBOX="$WORKSPACE/sandbox"
 
-mkdir -p "$HOME/sandbox/"
-mkdir -p "$HOME/personal/"
+mkdir -p "$DEV_BOX"
+mkdir -p "$SANDBOX"
 
 alias dev="cd $DEV_BOX"
 alias box="cd $DEV_BOX"
