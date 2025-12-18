@@ -83,6 +83,8 @@ mkdir -p "$SANDBOX"
 
 alias dev="cd $DEV_BOX"
 alias box="cd $DEV_BOX"
+alias spaces="cd $WORKSPACE"
+alias scripts="cd $WORKSPACE/scripts"
 alias sand="cd $SANDBOX"
 alias sandbox="cd $SANDBOX"
 alias media="cd $HOME/media/"
