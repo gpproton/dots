@@ -9,13 +9,11 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-export TERMCMD="kitty --title 'terminal filechooser'"
-
 . $HOME/.sharedrc
 . "$HOME/.cargo/env"
-. "/home/leanny/.deno/env"
-. "/home/lea/.deno/env"
+
 source /home/lea/.local/share/bash-completion/completions/deno.bash
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/lea/.sdkman"
 [[ -s "/home/lea/.sdkman/bin/sdkman-init.sh" ]] && source "/home/lea/.sdkman/bin/sdkman-init.sh"
