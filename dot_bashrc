@@ -5,11 +5,35 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
+# Initialize zsh completions (added by deno install script)
+autoload -Uz compinit
+compinit
+
+source_if_exists() {
+  if test -r "$1"; then
+    source "$1"
+  fi
+}
+
+source_if_exists "$HOME/.sharedrc"
+
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+. "$HOME/.deno/env"
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/lea/.sdkman"
+[[ -s "/home/lea/.sdkman/bin/sdkman-init.sh" ]] && source "/home/lea/.sdkman/bin/sdkman-init.sh"
+
+
+# Added by Toolbox App
+export PATH="$PATH:/home/lea/.local/share/JetBrains/Toolbox/scripts"
+
+
 
 . $HOME/.sharedrc
+
 . "$HOME/.cargo/env"
 
 source /home/lea/.local/share/bash-completion/completions/deno.bash
